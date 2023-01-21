@@ -8,7 +8,335 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media only screen and (max-width: 62.5em) {
+    html {
+      font-size: 50%; } }
 
 body {
-  font-weight: 300;
-  line-height: 1.6; }
+  font-family: "Lato", sans-serif; }
+
+.featured {
+  padding: 12rem 3rem; }
+  .featured__nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 4rem; }
+  .featured__h1 {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3.2rem;
+    line-height: 4rem;
+    text-transform: capitalize;
+    color: #1B1C57; }
+
+.house {
+  display: flex; }
+  .house__home {
+    margin-right: 2rem; }
+  .house__villa {
+    display: flex;
+    align-items: center;
+    border: 2px solid  gray;
+    padding: 0 3rem;
+    border-radius: 4rem;
+    margin-right: 2rem; }
+  .house__villa-logo {
+    height: 1.8rem;
+    width: 1.8rem; }
+  .house__villa-text {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: #888B97; }
+    .house__villa-text__appart {
+      display: flex;
+      align-items: center;
+      background: whitesmoke;
+      border: 2px solid  gray;
+      padding: 0 3rem;
+      border-radius: 4rem;
+      margin-right: 2rem; }
+  .house .house-icon1 {
+    margin-right: 1rem; }
+  .house .houses {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; }
+    .house .houses__p1 {
+      margin-top: 2rem;
+      font-family: 'Lexend';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 2.4rem;
+      line-height: 3.2rem;
+      color: #0E1735; }
+    .house .houses__price1 {
+      font-family: 'Lexend';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 2rem;
+      line-height: 3.2rem;
+      color: #3C4563; }
+    .house .houses__card1-details {
+      display: flex;
+      margin-top: 2rem; }
+    .house .houses__text1 {
+      font-family: 'Lexend';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.8rem;
+      line-height: 2.4rem;
+      color: #0E1735; }
+    .house .houses__cardlogo {
+      margin-right: 2rem; }
+
+.header {
+  width: 100%;
+  height: 100%;
+  display: flex; }
+  @media only screen and (max-width: 50em) {
+    .header {
+      display: flex;
+      flex-direction: column;
+      padding: 0 5rem;
+      height: 100%; } }
+  .header__first {
+    flex: 0 0 50%; }
+  .header__second {
+    flex: 0 0 50%;
+    background-image: url(../img/dashboard.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom; }
+  .header__first-haf {
+    padding: 4rem 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(../img/blur.png);
+    background-position: left; }
+  .header__second-haf {
+    padding: 0 6rem;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  .header__heading {
+    font-family: 'Lexend';
+    font-style: normal;
+    width: 60%;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 5rem;
+    text-transform: capitalize;
+    color: #1B1C57;
+    padding-bottom: 1.5rem; }
+  .header__span {
+    color: lightcoral; }
+  .header__para p {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #626687;
+    opacity: 0.75; }
+  .header__ship-para {
+    font-family: 'Lexend';
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+    color: #888B97; }
+  .header__logo-div {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; }
+
+.hunter {
+  display: flex;
+  align-items: center;
+  position: relative; }
+  .hunter__icons1 {
+    width: 3.2rem;
+    height: 3.2rem; }
+  .hunter__icons2 {
+    width: 3.2rem;
+    height: 3.2rem;
+    position: absolute;
+    top: .5rem;
+    left: .5rem; }
+  .hunter__text {
+    font-family: 'Lexend';
+    color: #1B1C57;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    text-transform: capitalize;
+    margin-left: 1.2rem; }
+
+.search {
+  display: flex;
+  align-items: center;
+  border: 1px solid #E0E3EB;
+  border-radius: 3.2rem;
+  justify-content: space-between;
+  padding: 3px; }
+  .search__icon {
+    padding-left: 17px; }
+  .search__text {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: #888B97; }
+  .search__btn {
+    height: 4.8rem;
+    justify-self: end; }
+
+.navbar {
+  padding-top: 1.2rem; }
+
+.nav {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap; }
+  .nav__link {
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    text-transform: capitalize;
+    color: #F0F3FD;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 3.2rem;
+    padding: .8rem 1.6rem; }
+  .nav__last {
+    width: 10.7rem;
+    text-decoration: none;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 600;
+    background: #D1FAE5;
+    border-radius: 3.2rem;
+    color: #F0F3FD;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    color: #047857;
+    padding: 1.2rem 1.6rem; }
+
+.navbar-row {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  @media only screen and (max-width: 50em) {
+    .navbar-row {
+      height: 208px; } }
+
+.info {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 2rem; }
+  .info__div1 {
+    display: flex;
+    align-items: center;
+    padding: 0.8rem;
+    height: 6rem;
+    background: #FFFFFF;
+    box-shadow: 0px 11px 48px rgba(51, 51, 51, 0.06);
+    border-radius: 22px; }
+  .info__div2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.8rem;
+    height: 6rem;
+    background: #FFFFFF;
+    box-shadow: 0px 11px 48px rgba(51, 51, 51, 0.06);
+    border-radius: 22px; }
+  .info__div3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.8rem;
+    height: 6rem;
+    background: #FFFFFF;
+    box-shadow: 0px 11px 48px rgba(51, 51, 51, 0.06);
+    border-radius: 22px; }
+  .info__img1 {
+    width: 7rem;
+    height: 7rem;
+    margin-left: -1rem; }
+  .info__img2 {
+    width: 7rem;
+    height: 7rem;
+    margin-left: -5.4rem; }
+  .info__img3 {
+    width: 7rem;
+    height: 7rem;
+    margin-left: -5.4rem; }
+  .info__img4 {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 8px; }
+  .info__img5 {
+    margin-left: -2rem;
+    width: 8rem;
+    height: 8rem; }
+  .info__text1 {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    color: #1B1C57; }
+  .info__text2 {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.8rem;
+    color: #68799F; }
+
+.testing {
+  position: relative; }
+  .testing .test {
+    height: 9.1rem;
+    width: 6.5rem;
+    border-top: 4px solid #EF4444;
+    border-left: 4px solid #EF4444;
+    position: absolute;
+    top: -17rem;
+    left: 7.7rem; }
+  .testing .test1 {
+    height: 9.1rem;
+    width: 6.5rem;
+    border-top: 4px solid #F59E0B;
+    border-right: 4px solid #F59E0B;
+    position: absolute;
+    top: -10.2rem;
+    left: 50rem; }
+  .testing .test2 {
+    height: 9.1rem;
+    width: 6.5rem;
+    border-top: 4px solid #3B82F6;
+    border-right: 4px solid #3B82F6;
+    position: absolute;
+    top: 5rem;
+    left: 52.5rem; }

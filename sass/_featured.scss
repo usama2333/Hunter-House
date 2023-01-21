@@ -1,0 +1,144 @@
+.featured {
+    padding: 12rem 3rem;
+    // margin-top: 13rem;
+    // height: 70vh;
+   
+
+    &__nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 4rem;
+    }
+
+    &__heading {
+
+    }
+    &__h1 {
+        font-family: 'Lexend';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 3.2rem;
+        line-height: 4rem;
+        text-transform: capitalize;
+        color: #1B1C57;
+    }
+
+
+}
+.recomend  {
+    font-family: 'Lexend';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 18px;
+margin-left: 6rem;
+text-transform: capitalize;
+color: #F59E0B;
+}
+
+.house {
+    display: flex;
+    
+
+    &__home  {
+        margin-right: 2rem;
+    }
+
+    &__full-house {
+
+    }
+
+    &__villa {
+        display: flex;
+        align-items: center;
+        
+        border: 2px solid  gray;
+        padding: 0 3rem;
+        border-radius: 4rem;
+        margin-right: 2rem;
+
+    }
+
+    &__villa-logo {
+        height: 1.8rem;
+        width: 1.8rem;
+        margin-right: 1rem;
+        
+
+    }
+
+    &__villa-text {
+
+        font-family: 'Lexend';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 28px;
+        color: #888B97;
+    }
+        
+    
+
+    &__appart {
+        display: flex;
+        align-items: center;
+        border: 2px solid  gray;
+        padding: 0 3rem;
+        border-radius: 4rem;
+        margin-right: 2rem;
+    }
+}
+
+.house-icon1 {
+    margin-right: 1rem;
+}
+
+.houses {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  
+
+    &__p1 {
+
+    margin-top: 2rem;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    color: #0E1735;
+
+    }
+    &__price1 {
+
+        font-family: 'Lexend';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 3.2rem;
+        color: #3C4563;
+    }
+
+    &__card1-details{
+        display: flex;
+        margin-top: 2rem;
+    }
+
+    &__text1 {
+        font-family: 'Lexend';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+   
+        color: #0E1735;
+    }
+
+
+    &__cardlogo {
+        margin-right: 2rem;
+    }
+}

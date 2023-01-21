@@ -1,11 +1,9 @@
 // COLOR VARIABLES
-// $color-primary: #c69963;
-// $color-primary-dark: #B28451;
+$body-color : #E5E5E5;
 
 // FONT VARIABLES
-// $font-primary: 'Nunito', sans-serif;
-// $font-display: 'Josefin Sans', sans-serif;
-
+$font-primary : 'Lato', sans-serif;
+$font-display : 'Open Sans', sans-serif;
 
 
 // RESPONSIVE BREAKPOINTS
@@ -32,14 +30,16 @@ html {
     box-sizing: border-box;
     font-size: 62.5%;   // 1 rem = 10px ,  10px / 16px = 62.5%
 
-    // @media only screen and (max-width : $bp-large)  {
-    //     font-size: 50%;     // 1 rem = 8px , 8px/16px = 59%  
+    @media only screen and (max-width : $bp-large)  {
+        font-size: 50%;     // 1 rem = 8px , 8px/16px = 59%  
                 
-    // }
+    }
 }
 
 body {
-    // font-family: $font-primary;
+    
+    // background-color: $body-color;
+    font-family: $font-primary;
     // color: $color-grey-dark-2;
     // font-weight: 300;
     // line-height: 1.6;
