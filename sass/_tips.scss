@@ -1,0 +1,244 @@
+.tips {
+    padding: 4rem;
+
+    &__heading1 {
+
+        font-family: 'Lexend';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 3.2rem;
+        line-height: 4.2rem;
+        text-align: center;
+        text-transform: capitalize;
+        color: #1B1C57;
+
+        @media only screen and (max-width : $bp-small)  {
+            width: 100%;
+            font-size: 3rem; 
+            line-height: 3.5rem; 
+                
+    }
+
+
+    }
+
+    &__heading2 {
+        font-family: 'Lexend';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 3.2rem;
+        line-height: 4.0rem;
+        text-align: center;
+        text-transform: capitalize;
+        color: #1B1C57;
+        margin-bottom: 2.4rem;
+
+        @media only screen and (max-width : $bp-small)  {
+            width: 100%;
+            font-size: 3rem; 
+            line-height: 3.5rem; 
+                
+       }
+
+  
+    }
+
+    &__button {
+        padding: 12px 16px;
+        background: #10B981;
+        border-radius: 32px;
+        font-family: 'Lexend';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 22px;
+        color: #FFFFFF;
+        margin-bottom: 5rem;
+
+        @media only screen and (max-width : $bp-small)  {
+            padding: 7px 7px;
+            border-radius: 25px;   
+            margin-bottom: 3rem;
+       }
+    }
+
+    &__row {
+        display: flex;
+        padding: 2rem;
+
+            
+        @media only screen and (max-width : $bp-large)  {
+           
+            flex-direction: column;
+            align-items: center;
+        }
+
+    }
+
+    &__first {
+        flex: 0 0 50%;
+
+    }
+    &__main-row {
+        display: flex;
+
+        @media only screen and (max-width : $bp-small)  {
+            flex-direction: column;
+                
+    }
+
+    }
+
+    &__img-div {
+
+    }
+
+    &__img {
+        margin-right: 3.2rem;
+
+        @media only screen and (max-width : $bp-small)  {
+        
+            width: 100%;
+            margin-bottom: 1rem;     
+            }
+    }
+
+    &__text-div {
+
+    }
+
+    &__text-row1 {
+        display: flex;
+        align-items: center;
+        padding-bottom: 1.7rem;
+
+    }
+
+    &__logo {
+        margin-right: 1.5rem;
+
+  
+    }
+
+    &__row1-text {
+
+        font-family: 'Lexend';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.4rem;
+        // line-height: 2.2rem;        
+        color: #3C4563;
+
+    }
+
+    &__h1 {
+        font-family: 'Lexend';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.8rem;
+        line-height: 3.2rem;
+        text-transform: capitalize;
+        color: #1B1C57;
+    }
+
+    &__text-row2 {
+        display: flex;
+        margin-top: 1.2rem;
+
+        @media only screen and (max-width : $bp-small)  {
+            margin-bottom: 2.5rem;
+        }
+
+    }
+
+    &__logo-clock {
+
+        margin-right: 1.5rem;
+    }
+
+    &__last-p {
+
+        font-family: 'Lexend';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: 2.4rem;     
+        color: #888B97;
+       
+    }
+
+    &__second {
+        flex: 0 0 50%;
+
+    }
+
+    &__second-row1 {
+        display: flex;
+        align-items: center;
+        margin-top: 2.9rem;
+        margin-bottom: 1.7rem;
+
+    }
+
+    &__second-text {
+
+        font-family: 'Lexend';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+        
+        color: #3C4563;
+    }
+
+    &__second-logo {
+        margin-right: 1.6rem;
+
+    }
+
+    &__second-p {
+
+        font-family: 'Lexend';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        color: #626687;
+        opacity: 0.75;
+    }
+
+    &__last-img {
+
+        @media only screen and (max-width : $bp-largest)  {
+            width: 100%;
+        }
+        @media only screen and (max-width : $bp-large)  {
+            width: 84%;
+            margin-top: 6rem;
+        }
+        @media only screen and (max-width : $bp-small)  {
+            width: 100%;
+        }
+        
+        
+        // @media only screen and (max-width : $bp-medium)  {
+        //     width: 100%;
+        // }
+    }
+
+
+
+
+}
+
+.div-1 {
+    margin-bottom: 4rem;
+}
+
+.div-2 {
+    margin-bottom: 4rem;
+}
+
+.p-margin {
+    margin-top: 1.2rem;
+}

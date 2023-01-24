@@ -23,7 +23,7 @@
   
 
     &__second {
-        height: 97vh;
+        // height: 97vh;
         flex: 0 0 50%;
         // position: relative;
         // padding: 1rem;
@@ -33,6 +33,14 @@
         background-size: cover;
         background-position:bottom;
         // width: 100%;
+
+            
+        @media only screen and (max-width : $bp-small)  {
+           
+           height: 100;
+           background-size: auto;
+           
+        }
     }
 
     &__first-haf {
@@ -43,6 +51,14 @@
         background-image: url(../img/blur.png);
 
         background-position: left;
+
+        @media only screen and (max-width : $bp-medium)  {
+           
+            background-image: none;
+                
+       }
+
+
 
       
         
@@ -55,11 +71,11 @@
         flex-direction: column;
         justify-content: space-between;
 
-        // @media only screen and (max-width : $bp-large)  {
+        @media only screen and (max-width : $bp-large)  {
            
-        //     flex-direction: row;
+                margin-bottom: 2rem;
                     
-        //     }
+           }
     
     }
 
@@ -72,7 +88,14 @@
         line-height: 5rem;
         text-transform: capitalize;
         color: #1B1C57;
-        padding-bottom: 1.5rem;
+        // padding-bottom: 1.5rem;
+
+        @media only screen and (max-width : $bp-small)  {
+                width: 100%;
+                font-size: 3rem; 
+                line-height: 4rem; 
+                    
+        }
         
     }
 
@@ -92,6 +115,7 @@
             line-height: 28px;
             color: #626687;
             opacity: 0.75;
+            margin-bottom: 3rem;
 
         }
    
@@ -103,6 +127,7 @@
         font-size: 1.6rem;
         line-height: 3.2rem;
         color: #888B97;
+        margin-top: 3rem;
     }
 
     &__logo-div {
@@ -124,7 +149,39 @@
     display: flex;
     align-items: center;
     position: relative;
+    margin-bottom: 8rem;
+
+    @media only screen and (max-width : $bp-small)  {
+        margin-bottom: 4rem;
+        margin-top: 3rem;
+                
+    }
+
+    @media only screen and (max-width : $bp-medium)  {
+        margin-bottom: -2rem;
+                
+    }
+
+
     
+    &__nav-row  {
+        display: flex;
+        justify-content: space-between;
+
+        @media only screen and (max-width : $bp-medium)  {
+            margin-bottom: 8rem;
+                    
+        }
+
+        @media only screen and (max-width : $bp-small)  {
+            flex-direction: column-reverse;
+            flex-wrap: wrap;
+                    
+        }
+        // margin-bottom: 8rem;
+        // flex-direction: column-reverse;
+        
+    }
 
     &__icons1 {
         width: 3.2rem;
@@ -151,6 +208,12 @@
         text-transform: capitalize;
         margin-left: 1.2rem;
 
+        
+        @media only screen and (max-width : $bp-small)  {
+           
+            margin-left: 3.2rem;
+        }
+
     }
 
     
@@ -167,6 +230,16 @@
     
     &__icon {
         padding-left: 17px;
+
+            
+        @media only screen and (max-width : $bp-small)  {
+           
+            padding-left: 1rem;
+            margin-right: 1rem;
+
+        }
+
+        
     }
 
     &__text {
@@ -198,6 +271,17 @@
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
+    margin-top: 3rem;
+
+     @media only screen and (max-width : $bp-large)  {
+            width: 84%;
+            margin-top: 6rem;
+        }
+
+        @media only screen and (max-width : $bp-medium)  {
+            display: none;
+            visibility: hidden;
+        }
 
     &__item {
         
@@ -214,6 +298,7 @@
         line-height: 1.8rem;
         text-transform: capitalize;
         color: #F0F3FD;
+        // color: black;
         background: rgba(255, 255, 255, 0.1);
         border: 1px solid rgba(255, 255, 255, 0.3);
         border-radius: 3.2rem;
@@ -236,6 +321,101 @@
     }
 }
 
+.navbar1 {
+    visibility: hidden;
+}
+
+// Second Navbar
+@media only screen and (max-width : $bp-medium)  {
+    .navbar1 {
+        visibility: visible;
+    }
+
+.nav1 {
+
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+
+
+    // @media only screen and (max-width : $bp-medium)  {
+        
+
+    // }
+
+    // @media only screen and (max-width : $bp-large)  {
+    //     display: none;
+    //     visibility: hidden;
+
+    // }
+
+    // @media only screen and (max-width : $bp-largest)  {
+    //     display: none;
+    //     visibility: hidden;
+
+    // }
+    
+    
+
+    &__item {
+        
+    }
+
+    &__link1 {
+
+        text-align: center;
+        text-decoration: none;
+        font-family: 'Lexend';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+        text-transform: capitalize;
+        background-color:#D1FAE5;
+        color: #047857;
+        // background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 3.2rem;
+        padding: .8rem 1.6rem;
+        margin-right: 2rem;
+
+         @media only screen and (max-width : $bp-small)  {
+            margin-right: 0rem;
+            padding: .4rem 1rem;
+            margin-bottom: 2rem;
+
+         }
+    }
+
+    &__last1 {
+        width: 10.7rem;
+        text-decoration: none;
+        font-family: 'Lexend';
+        font-style: normal;
+        font-weight: 600;
+        background: #D1FAE5;
+        border-radius: 3.2rem;
+        color: #F0F3FD;
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+        color: #047857;
+        padding: 1.2rem 1.6rem;
+
+        @media only screen and (max-width : $bp-small)  {
+            padding: 1rem 1rem;
+            line-height: 2rem;
+        //    display: none;
+
+         }
+
+    }
+}
+
+}
+///////
 
 .navbar-row {
     height: 100%;
@@ -251,10 +431,16 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    // flex-wrap: wrap;
+    flex-wrap: wrap;
     
     padding-bottom: 2rem;
     // margin-left: 2.8rem;
+
+        
+    // @media only screen and (max-width : $bp-small)  {
+    //        align-items: flex-end;
+        
+    // }
 
     &__div1 {
         display: flex;
@@ -291,6 +477,12 @@
         background: #FFFFFF;
         box-shadow: 0px 11px 48px rgba(51, 51, 51, 0.06);
         border-radius: 22px;
+
+        @media only screen and (max-width : $bp-small)  {
+           margin-top: 2rem;
+           display: none;
+        
+    }
     }
     &__img-div {
         

@@ -1,0 +1,122 @@
+.footer {
+
+    
+
+    &__main {
+        display: flex;
+        padding: 7rem;
+        
+        @media only screen and (max-width : $bp-medium)  {
+            flex-direction: column;;
+        }
+    }
+
+    &__first {
+
+        flex: 0 0 50%;
+
+    }
+
+    &__first-text-div {
+        width: 62%;
+        margin-top: 2.2rem;
+
+        @media only screen and (max-width : $bp-medium)  {
+            width: 70%;
+            
+        }
+    }
+
+    &__first-text {
+
+        font-family: 'Lexend';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        color: #626687;
+        opacity: 0.75;
+
+        @media only screen and (max-width : $bp-medium)  {
+            font-weight: 400;
+            font-size: 2.4rem;
+            line-height: 3.4rem;
+            margin-top: 5rem;
+            
+        }
+    }
+
+    &__icons-div {
+        display: flex;
+        align-items: center;
+        margin-top: 3rem;
+
+        @media only screen and (max-width : $bp-medium)  {
+            
+            margin-bottom: 8rem;
+            
+        }
+    }
+
+    &__icon {
+        margin-right: 3rem;
+
+    }
+
+
+    &__second {
+
+        flex: 0 0 50%;
+        // background-image: url(../img/footer-blur.png);
+
+    }
+}
+
+.hunter-footer {
+    display: flex;
+    position: relative;
+}
+
+.nav-part {
+
+    display: flex;
+    justify-content: space-between;
+
+    &__row1 {
+
+        @media only screen and (max-width : $bp-small)  {
+            
+            margin-right: 3rem;
+        }
+
+    }
+
+    &__ul1 {
+
+        list-style-type: none;
+    }
+
+    &__li-main {
+
+        font-family: 'Lexend';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        text-transform: capitalize;
+        color: #0E1735;
+        margin-bottom: 2.4rem;
+    }
+
+    &__li {
+
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+        text-transform: capitalize;
+        color: #888B97;
+        margin-bottom: 1.8rem;
+
+         
+    }
+}
