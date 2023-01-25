@@ -208,6 +208,10 @@
         text-transform: capitalize;
         margin-left: 1.2rem;
 
+        @media only screen and (max-width : $bp-large)  {
+            margin-left: 2.2rem;
+        }
+
         
         @media only screen and (max-width : $bp-small)  {
            
@@ -276,6 +280,7 @@
      @media only screen and (max-width : $bp-large)  {
             width: 84%;
             margin-top: 6rem;
+            margin-left: 3rem;
         }
 
         @media only screen and (max-width : $bp-medium)  {
@@ -339,28 +344,13 @@
     align-items: center;
     flex-wrap: wrap;
     margin-top: 3rem;
-
-
-    // @media only screen and (max-width : $bp-medium)  {
-        
-
-    // }
-
-    // @media only screen and (max-width : $bp-large)  {
-    //     display: none;
-    //     visibility: hidden;
-
-    // }
-
-    // @media only screen and (max-width : $bp-largest)  {
-    //     display: none;
-    //     visibility: hidden;
-
-    // }
-    
     
 
-    &__item {
+    &__item1 {
+
+        @media only screen and (max-width : $bp-small)  {
+            margin-bottom: .2rem;
+        }
         
     }
 
@@ -482,7 +472,7 @@
            margin-top: 2rem;
            display: none;
         
-    }
+        }
     }
     &__img-div {
         

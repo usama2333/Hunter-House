@@ -13,7 +13,7 @@ html {
       font-size: 50%; } }
 
 body {
-  font-family: "Lato", sans-serif; }
+  font-family: 'lexend'; }
 
 .featured {
   padding: 12rem 3rem; }
@@ -173,6 +173,81 @@ body {
   .houses__cardlogo {
     margin-right: 2rem; }
 
+.footer__main {
+  display: flex;
+  padding: 7rem; }
+  @media only screen and (max-width: 50em) {
+    .footer__main {
+      flex-direction: column; } }
+
+.footer__first {
+  flex: 0 0 50%; }
+
+.footer__first-text-div {
+  width: 62%;
+  margin-top: 2.2rem; }
+  @media only screen and (max-width: 50em) {
+    .footer__first-text-div {
+      width: 70%; } }
+
+.footer__first-text {
+  font-family: 'Lexend';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: #626687;
+  opacity: 0.75; }
+  @media only screen and (max-width: 50em) {
+    .footer__first-text {
+      font-weight: 400;
+      font-size: 2.4rem;
+      line-height: 3.4rem;
+      margin-top: 5rem; } }
+
+.footer__icons-div {
+  display: flex;
+  align-items: center;
+  margin-top: 3rem; }
+  @media only screen and (max-width: 50em) {
+    .footer__icons-div {
+      margin-bottom: 8rem; } }
+
+.footer__icon {
+  margin-right: 3rem; }
+
+.footer__second {
+  flex: 0 0 50%; }
+
+.hunter-footer {
+  display: flex;
+  position: relative; }
+
+.nav-part {
+  display: flex;
+  justify-content: space-between; }
+  @media only screen and (max-width: 37.5em) {
+    .nav-part__row1 {
+      margin-right: 3rem; } }
+  .nav-part__ul1 {
+    list-style-type: none; }
+  .nav-part__li-main {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: capitalize;
+    color: #0E1735;
+    margin-bottom: 2.4rem; }
+  .nav-part__li {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    text-transform: capitalize;
+    color: #888B97;
+    margin-bottom: 1.8rem; }
+
 .header {
   width: 100%;
   height: 100%;
@@ -194,15 +269,18 @@ body {
     background-position: bottom; }
     @media only screen and (max-width: 37.5em) {
       .header__second {
-        height: 100%;
+        height: 100;
         background-size: auto; } }
   .header__first-haf {
-    padding: 3rem 6rem;
+    padding: 4rem 6rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-image: url(../img/blur.png);
     background-position: left; }
+    @media only screen and (max-width: 50em) {
+      .header__first-haf {
+        background-image: none; } }
   .header__second-haf {
     padding: 0 6rem;
     height: 40%;
@@ -258,7 +336,21 @@ body {
   margin-bottom: 8rem; }
   @media only screen and (max-width: 37.5em) {
     .hunter {
-      margin-bottom: 4rem; } }
+      margin-bottom: 4rem;
+      margin-top: 3rem; } }
+  @media only screen and (max-width: 50em) {
+    .hunter {
+      margin-bottom: -2rem; } }
+  .hunter__nav-row {
+    display: flex;
+    justify-content: space-between; }
+    @media only screen and (max-width: 50em) {
+      .hunter__nav-row {
+        margin-bottom: 8rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .hunter__nav-row {
+        flex-direction: column-reverse;
+        flex-wrap: wrap; } }
   .hunter__icons1 {
     width: 3.2rem;
     height: 3.2rem; }
@@ -277,6 +369,9 @@ body {
     line-height: 2rem;
     text-transform: capitalize;
     margin-left: 1.2rem; }
+    @media only screen and (max-width: 62.5em) {
+      .hunter__text {
+        margin-left: 2.2rem; } }
     @media only screen and (max-width: 37.5em) {
       .hunter__text {
         margin-left: 3.2rem; } }
@@ -313,7 +408,17 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin-top: 3rem; }
+  @media only screen and (max-width: 62.5em) {
+    .nav {
+      width: 84%;
+      margin-top: 6rem;
+      margin-left: 3rem; } }
+  @media only screen and (max-width: 50em) {
+    .nav {
+      display: none;
+      visibility: hidden; } }
   .nav__link {
     text-align: center;
     text-decoration: none;
@@ -341,6 +446,64 @@ body {
     line-height: 2.2rem;
     color: #047857;
     padding: 1.2rem 1.6rem; }
+
+.navbar1 {
+  visibility: hidden; }
+
+@media only screen and (max-width: 50em) {
+  .navbar1 {
+    visibility: visible; }
+  .nav1 {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 3rem; } }
+  @media only screen and (max-width: 50em) and (max-width: 37.5em) {
+    .nav1__item1 {
+      margin-bottom: .2rem; } }
+
+@media only screen and (max-width: 50em) {
+    .nav1__link1 {
+      text-align: center;
+      text-decoration: none;
+      font-family: 'Lexend';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1.4rem;
+      line-height: 1.8rem;
+      text-transform: capitalize;
+      background-color: #D1FAE5;
+      color: #047857;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 3.2rem;
+      padding: .8rem 1.6rem;
+      margin-right: 2rem; } }
+    @media only screen and (max-width: 50em) and (max-width: 37.5em) {
+      .nav1__link1 {
+        margin-right: 0rem;
+        padding: .4rem 1rem;
+        margin-bottom: 2rem; } }
+
+@media only screen and (max-width: 50em) {
+    .nav1__last1 {
+      width: 10.7rem;
+      text-decoration: none;
+      font-family: 'Lexend';
+      font-style: normal;
+      font-weight: 600;
+      background: #D1FAE5;
+      border-radius: 3.2rem;
+      color: #F0F3FD;
+      font-size: 1.4rem;
+      line-height: 2.2rem;
+      color: #047857;
+      padding: 1.2rem 1.6rem; } }
+    @media only screen and (max-width: 50em) and (max-width: 37.5em) {
+      .nav1__last1 {
+        padding: 1rem 1rem;
+        line-height: 2rem; } }
 
 .navbar-row {
   height: 100%;
@@ -449,8 +612,157 @@ body {
     top: 5rem;
     left: 52.5rem; }
 
+.news {
+  padding: 7rem 7.4rem;
+  width: 100%; }
+  .news__main-div {
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    background-image: url(../img/background-pic.png); }
+  .news__row {
+    display: flex;
+    width: 100%; }
+  .news__first-div {
+    flex: 0 0 25%;
+    height: auto;
+    position: relative; }
+    @media only screen and (max-width: 37.5em) {
+      .news__first-div {
+        display: none;
+        visibility: hidden;
+        flex: 0 0 0; } }
+  .news__div1-pic1 {
+    position: absolute;
+    top: 10%;
+    left: 10%; }
+    @media only screen and (max-width: 37.5em) {
+      .news__div1-pic1 {
+        display: none;
+        visibility: hidden; } }
+  .news__div1-pic2 {
+    position: absolute;
+    top: 10%;
+    left: 50%; }
+    @media only screen and (max-width: 37.5em) {
+      .news__div1-pic2 {
+        display: none;
+        visibility: hidden; } }
+  .news__div1-pic3 {
+    position: absolute;
+    top: 50%;
+    left: 10%; }
+    @media only screen and (max-width: 37.5em) {
+      .news__div1-pic3 {
+        display: none;
+        visibility: hidden; } }
+  .news__div1-pic4 {
+    position: absolute;
+    top: 55%;
+    left: 55%; }
+    @media only screen and (max-width: 37.5em) {
+      .news__div1-pic4 {
+        display: none;
+        visibility: hidden; } }
+  .news__second-div {
+    flex: 0 0 50%; }
+    @media only screen and (max-width: 37.5em) {
+      .news__second-div {
+        flex: 0 0 100%; } }
+  .news__third-div {
+    flex: 0 0 25%;
+    position: relative; }
+    @media only screen and (max-width: 37.5em) {
+      .news__third-div {
+        display: none;
+        visibility: hidden;
+        flex: 0 0 0; } }
+  .news__heading {
+    margin-top: 6.5rem; }
+  .news__heading-p1 {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3.2rem;
+    line-height: 4.8rem;
+    text-align: center;
+    text-transform: capitalize;
+    color: #1B1C57; }
+    @media only screen and (max-width: 62.5em) {
+      .news__heading-p1 {
+        font-size: 2.8rem;
+        line-height: 3.8rem; } }
+  .news__heading-p2 {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #1B1C57; }
+    @media only screen and (max-width: 62.5em) {
+      .news__heading-p2 {
+        font-size: 2.8rem;
+        line-height: 3.8rem; } }
+  .news__parent-row {
+    display: flex;
+    margin-top: 4.5rem;
+    align-items: center;
+    justify-content: space-around; }
+    @media only screen and (max-width: 37.5em) {
+      .news__parent-row {
+        margin-top: 6.5rem; } }
+  .news__message-row {
+    display: flex;
+    align-items: center; }
+  .news__message {
+    margin-right: 2rem; }
+  .news__message-p {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    color: #888B97; }
+    @media only screen and (max-width: 37.5em) {
+      .news__message-p {
+        font-size: 2rem; } }
+  .news__message-button {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    color: #FFFFFF;
+    background: #10B981;
+    border-radius: 32px;
+    align-items: center;
+    padding: 12px 16px; }
+    @media only screen and (max-width: 37.5em) {
+      .news__message-button {
+        padding: 8px 8px; } }
+  .news__div2-pic1 {
+    position: absolute;
+    top: 10%;
+    left: 10%; }
+  .news__div2-pic2 {
+    position: absolute;
+    top: 25%;
+    left: 50%; }
+  .news__div2-pic3 {
+    position: absolute;
+    top: 35%;
+    left: 10%; }
+  .news__div2-pic4 {
+    position: absolute;
+    top: 60%;
+    left: 60%; }
+
 .testimonials {
-  padding: 12rem 0rem;
+  padding-top: 10rem;
+  padding-bottom: 8rem;
   width: 100%; }
   @media only screen and (max-width: 37.5em) {
     .testimonials {
@@ -535,9 +847,6 @@ body {
       .testimonials__pic3-div {
         display: none; } }
     @media only screen and (max-width: 50em) {
-      .testimonials__pic3-div {
-        display: none; } }
-    @media only screen and (max-width: 62.5em) {
       .testimonials__pic3-div {
         display: none; } }
     @media only screen and (max-width: 75em) {
@@ -658,14 +967,24 @@ body {
     line-height: 28px;
     color: #3C4563; }
 
+.pagination-div {
+  text-align: center;
+  margin-top: 8rem; }
+  @media only screen and (max-width: 62.5em) {
+    .pagination-div {
+      margin-top: 15rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .pagination-div {
+      margin-top: 0rem; } }
+
 .tips {
   padding: 4rem; }
   .tips__heading1 {
     font-family: 'Lexend';
     font-style: normal;
     font-weight: 600;
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 3.2rem;
+    line-height: 4.2rem;
     text-align: center;
     text-transform: capitalize;
     color: #1B1C57; }
@@ -678,8 +997,8 @@ body {
     font-family: 'Lexend';
     font-style: normal;
     font-weight: 600;
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 3.2rem;
+    line-height: 4.0rem;
     text-align: center;
     text-transform: capitalize;
     color: #1B1C57;
@@ -741,8 +1060,8 @@ body {
     font-family: 'Lexend';
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
-    line-height: 32px;
+    font-size: 1.8rem;
+    line-height: 3.2rem;
     text-transform: capitalize;
     color: #1B1C57; }
   .tips__text-row2 {
@@ -757,8 +1076,8 @@ body {
     font-family: 'Lexend';
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
     color: #888B97; }
   .tips__second {
     flex: 0 0 50%; }
@@ -771,8 +1090,8 @@ body {
     font-family: 'Lexend';
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
     color: #3C4563; }
   .tips__second-logo {
     margin-right: 1.6rem; }
@@ -780,8 +1099,8 @@ body {
     font-family: 'Lexend';
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
     color: #626687;
     opacity: 0.75; }
   @media only screen and (max-width: 75em) {
