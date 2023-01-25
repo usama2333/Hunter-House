@@ -101,7 +101,8 @@
 
     &__span {
        
-       color : lightcoral;
+        color: transparent;
+        -webkit-text-stroke: 2px midnightblue;
     }
 
     &__para {
