@@ -49,7 +49,7 @@
         flex-direction: column;
         justify-content: space-between;
         background-image: url(../img/blur.png);
-
+        background-repeat: no-repeat;
         background-position: left;
 
         @media only screen and (max-width : $bp-medium)  {
