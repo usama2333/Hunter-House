@@ -1,7 +1,7 @@
 .featured {
-    padding: 12rem 3rem;
-    // margin-top: 13rem;
-    // height: 70vh;
+    // padding: 12rem 3rem;
+    padding: 12rem 0rem 6rem 16rem;
+   
 
     @media only screen and (max-width : $bp-small)  {
            
@@ -12,10 +12,11 @@
 
     &__nav {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
         margin-bottom: 4rem;
+        padding-right: 12rem;
 
          @media only screen and (max-width : $bp-medium)  {
            
@@ -107,7 +108,7 @@
         display: flex;
         align-items: center;
         
-        border: 2px solid  gray;
+        border: 2px solid  #E5E5E5;
         padding: 0 3rem;
         border-radius: 4rem;
         margin-right: 2rem;
@@ -123,7 +124,7 @@
     &__villa-logo {
         height: 1.8rem;
         width: 1.8rem;
-        margin-right: 1rem;
+        margin-right: 1.1rem;
         
 
     }
@@ -143,7 +144,7 @@
     &__appart {
         display: flex;
         align-items: center;
-        border: 2px solid  gray;
+        border: 2px solid  #E5E5E5;
         padding: 0 3rem;
         border-radius: 4rem;
         margin-right: 2rem;
@@ -180,7 +181,7 @@
 
 .houses {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: wrap;
   
 
@@ -233,6 +234,7 @@
         @media only screen and (max-width : $bp-small)  {
             margin-bottom: 4rem;   
       }
+      
   
     }
 
@@ -272,8 +274,18 @@
         color: #0E1735;
     }
 
+    &__text2 {
+        
+        font-family: 'Lexend';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        color: #888B97;
+    }
+
 
     &__cardlogo {
-        margin-right: 2rem;
+        margin-right: 1.6rem;
     }
 }

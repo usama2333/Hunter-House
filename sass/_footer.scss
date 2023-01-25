@@ -3,10 +3,15 @@
     background-image: url(../img/footer-blur.png);
     background-repeat: no-repeat;
     background-position: right;
+
+    @media only screen and (max-width : $bp-small)  {
+        background-image: none;
+    }
   
     &__main {
         display: flex;
-        padding: 7rem;
+        // padding: 7rem;
+        padding: 6rem 12rem;
         
         @media only screen and (max-width : $bp-medium)  {
             flex-direction: column;;

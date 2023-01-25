@@ -1,5 +1,10 @@
 .tips {
-    padding: 4rem;
+
+    background-image: url(../img/greencolor.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    padding: 6rem 12rem;
+    // margin-right: auto;
 
     &__heading1 {
 
@@ -31,7 +36,7 @@
         text-align: center;
         text-transform: capitalize;
         color: #1B1C57;
-        margin-bottom: 2.4rem;
+        margin-bottom: 3.6rem;
 
         @media only screen and (max-width : $bp-small)  {
             width: 100%;
@@ -53,7 +58,7 @@
         font-size: 14px;
         line-height: 22px;
         color: #FFFFFF;
-        margin-bottom: 5rem;
+        margin-bottom: 4.2rem;
 
         @media only screen and (max-width : $bp-small)  {
             padding: 7px 7px;
@@ -64,7 +69,7 @@
 
     &__row {
         display: flex;
-        padding: 2rem;
+        // padding: 2rem;
 
             
         @media only screen and (max-width : $bp-large)  {
@@ -110,7 +115,7 @@
     &__text-row1 {
         display: flex;
         align-items: center;
-        padding-bottom: 1.7rem;
+        padding-bottom: 1.2rem;
 
     }
 
@@ -143,6 +148,7 @@
 
     &__text-row2 {
         display: flex;
+        align-items: center;
         margin-top: 1.2rem;
 
         @media only screen and (max-width : $bp-small)  {
@@ -154,6 +160,8 @@
     &__logo-clock {
 
         margin-right: 1.5rem;
+        width: auto;
+        height: auto;
     }
 
     &__last-p {
@@ -208,6 +216,8 @@
     }
 
     &__last-img {
+
+        width: 100%;
 
         @media only screen and (max-width : $bp-largest)  {
             width: 100%;

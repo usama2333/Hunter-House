@@ -1,8 +1,8 @@
 .testimonials {
 
     // padding: 12rem 0rem;
-    padding-top: 10rem;
-    padding-bottom: 8rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
     width: 100%;
 
     @media only screen and (max-width : $bp-small)  {
@@ -70,7 +70,7 @@
 
     &__row {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         
         flex-wrap: wrap;
 
@@ -85,8 +85,8 @@
 
     &__pic1-div {
         position: relative;
-        height: 40rem;
-        width: 35rem;
+        // height: 40rem;
+        // width: 35rem;
         
         @media only screen and (max-width : $bp-medium)  {
             // display: none;
@@ -107,8 +107,8 @@
     }
 
     &__pic2-div {
-        width: 74rem;
-        height: 40rem;
+        // width: 74rem;
+        // height: 40rem;
         position: relative;
         // background-color: brown;
 
@@ -137,23 +137,23 @@
     }
 
     &__pic3-div {
-        width: 24rem;
-        height: 40rem;
+        // width: 24rem;
+        // height: 40rem;
         position:relative;
 
-        display: none;
+        // display: none;
         @media only screen and (max-width : $bp-small)  {
-            display: none;
+            // display: none;
            
         }
         @media only screen and (max-width : $bp-medium)  {
-            display: none;
+            // display: none;
            
         }
      
         
         @media only screen and (max-width : $bp-largest)  {
-            display: none;
+            // display: none;
            
         }
 
@@ -350,7 +350,7 @@
 
 .pagination-div {
     text-align: center;
-    margin-top: 8rem;
+    margin-top: 11rem;
 
     @media only screen and (max-width : $bp-large)  {
         margin-top: 15rem;

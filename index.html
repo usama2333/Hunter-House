@@ -94,14 +94,20 @@
            
 
             <div class="search">
-              <div>
-                <img src="./img/search-icon.png" alt="search icon" class="search__icon">
-              </div>
-              <div>
+              <div class="search__location-row">
+                <div>
+                  <img src="./img/search-icon.png" alt="search icon" class="search__icon">
+                </div>
+                
                 <p class="search__text">Search for the location you want!</p>
               </div>
-              <div>
-                <img src="./img/search-btn.png" alt="search btn" class="search__btn">
+              <!-- <div>
+                
+              </div> -->
+              <div class="search__button-row">
+                <p class="search__button-text">Search</p>
+                <img src="./img/searchbtnicon.png" class="search__button-icon" alt="" >
+                <!-- <img src="./img/search-btn.png" alt="search btn" class="search__btn"> -->
               </div>
             </div>
 
@@ -151,9 +157,20 @@
               <li class="nav__item">
                 <a href="#" class="nav__link">Article</a>
               </li>
-              <li class="nav__item">
-                <a href="#" class="nav__link">Property ﹀</a>
-              </li>
+              
+                <div class="nav__arrow-row nav__link">
+                  <div>
+                    <li class="nav__item">
+                    <a href="#" class="nav__change" >Property  </a>
+                  </li>
+                  </div>
+                  <div>
+                      <img src="./img/arrow.png" alt="">
+                  </div>
+                  
+                </div>
+                
+              
               <li class="nav__item">
                 <a href="#" class="nav__last">sign up</a>
               </li>
@@ -216,7 +233,10 @@
       <section class="featured">
 
 
-        <p class="recomend">-- Our Recomendations</p>
+        <div class="tours__recomend2-row">
+          <div class="tours__recomend2-line"></div>
+          <p class="tours__recomend2">Our Recomendations!</p>
+        </div>
 
         <div class="featured__nav">
           
@@ -302,23 +322,24 @@
             
           </div>
 
-          <!-- <div class="houses__card4">
-            
-            <img src="./img/houseno1.png" alt="">
-            <p class="houses__p1">RoseLands Houses</p>
-            <p class="houses__price1">$ 35,000,000</p>
+          <div class="houses__card4">
+          
+            <img src="./img/hafhouse.png" alt="">
+          
+            <p class="houses__p1">Cosmo's</p>
+            <p class="houses__price1">$ 22,000,000</p>
             <div class="houses__card1-details">
               <div>
-                <img src="./img/card1pic.png" alt="">
+                <img src="./img/tes.png" alt=""  class="houses__cardlogo">
               </div>
               
               <div>
-                <p class="houses__text1">Dianne Russell</p>
-                <p class="houses__text2">Manchester, Kentucky</p>
+                <p class="houses__text1">Jeny will</p>
+                <p class="houses__text2">Peterson Rd</p>
               </div>
             </div>
 
-          </div> -->
+          </div>
 
         </div>
 
@@ -332,7 +353,10 @@
 
           <div class="tours__first">
           
-            <p class="tours__recomend2">--Ready to sell!</p>
+            <div class="tours__recomend2-row">
+            <div class="tours__recomend2-line"></div>
+            <p class="tours__recomend2">Ready to sell!</p>
+          </div>
             <h1 class="tours__heading">Let's tour and see our house!</h1>
             <p class="tours__text">Houses recommended by our partners that have been curated to become the home of your dreams!</p>
             <p class="tours__house-detail">House Detail</p>
@@ -425,7 +449,7 @@
             </div>
             </div>
           </div>
-          
+
           <div class="testimonials__pic2-div">
             <img src="./img/h2.png" alt="" class="testimonials__img2">
 
@@ -435,7 +459,9 @@
             
               <div class="pic2-row">
                 <div class="pic2-row__first-row">
+                  <div>
                   <img src="./img/card1pic.png" alt="" class="pic2-row__pic">
+                </div>
                   <div>
                     <p class="pic2-row__p1">Dianne Russell</p>
                     <p class="pic2-row__p2">Manager Director</p>
@@ -459,17 +485,18 @@
 
           </div>
           <div class="testimonials__pic3-div">
+            
             <img src="./img/h3.png" alt="" class="testimonials__pic3">
-
+          
             <div class="testimonials__text3-div">
               <p class="testimonials__text2-div-h">The Hounter</p>
               <p class="testimonials__text2-div-p">Through this website I can get a Hounter house.</p>
             
               <div class="pic2-row">
                 <div class="pic2-row__first-row">
-                  <img src="./img/tes.png" alt="" class="pic2-row__pic">
+                  <img src="./img/card3pic.png" alt="" class="pic2-row__pic">
                   <div>
-                    <p class="pic2-row__p1">Dianne Russell</p>
+                    <p class="pic2-row__p1">Dianne</p>
                     <p class="pic2-row__p2">Director</p>
                   </div>
 
@@ -533,7 +560,11 @@
                   <p class="tips__h1">we want to buy a house</p>
 
                   <div class="tips__text-row2">
-                    <img src="./img/clock (1).png" class="tips__logo-clock" alt="">
+                    <div>
+                      <img src="./img/clock (1).png" class="tips__logo-clock" alt="">
+
+                    </div>
+                    
                     <p class="tips__last-p">4 min read | 25 Apr 2021</p>
                   </div>
 
@@ -561,7 +592,9 @@
                   <p class="tips__h1">the house we want to buy</p>
 
                   <div class="tips__text-row2">
+                    <div>
                    <img src="./img/clock (1).png" class="tips__logo-clock" alt="">
+                  </div>
                     <p class="tips__last-p">6 min read | 24 Apr 2021</p>
                   </div>
 
@@ -589,7 +622,9 @@
                     <p class="tips__h1">the house we want to buy</p>
   
                     <div class="tips__text-row2">
+                      <div>
                       <img src="./img/clock (1).png" class="tips__logo-clock" alt="">
+                    </div>
                       <p class="tips__last-p">2 min read | 25 Apr 2021</p>
                     </div>
   
@@ -618,7 +653,9 @@
               <p class="tips__second-p p-margin">Want to buy a house but are unsure about what we should know, here I will try to </p>
               <p class="tips__second-p">explain what we should know and check when we want to buy a house</p>
               <div class="tips__text-row2">
+                <div>
                 <img src="./img/clock (1).png" class="tips__logo-clock" alt="">
+              </div>
                 <p class="tips__last-p">8 min read | 25 Apr 2021</p>
               </div>
             </div>
