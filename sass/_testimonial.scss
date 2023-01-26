@@ -8,6 +8,7 @@
     @media only screen and (max-width : $bp-small)  {
         
         padding-bottom: 0rem;
+        padding-top: 4rem;
     }
 
     &__text-div {
@@ -87,19 +88,21 @@
         position: relative;
         // height: 40rem;
         // width: 35rem;
-        
-        @media only screen and (max-width : $bp-medium)  {
-            // display: none;
-            margin-bottom: 15rem;
-            margin-left: -5rem;
-
-        }
 
         @media only screen and (max-width : $bp-large)  {
             // display: none;
-            margin-bottom: 15rem;
+            margin-bottom: 9rem;
 
         }
+        
+        @media only screen and (max-width : $bp-medium)  {
+            // display: none;
+            margin-bottom: 9rem;
+            // margin-left: -5rem;
+
+        }
+
+       
         
     }
     &__img1 {
@@ -143,7 +146,7 @@
 
         // display: none;
         @media only screen and (max-width : $bp-small)  {
-            // display: none;
+            display: none;
            
         }
         @media only screen and (max-width : $bp-medium)  {
@@ -177,7 +180,7 @@
 
         @media only screen and (max-width : $bp-small)  {
             top: 83%;
-            left: 20%;
+            left: 9%;
         }
 
     }

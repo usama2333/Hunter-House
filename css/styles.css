@@ -19,7 +19,7 @@ body {
   padding: 12rem 0rem 6rem 16rem; }
   @media only screen and (max-width: 37.5em) {
     .featured {
-      padding: 6rem 3rem;
+      padding: 6rem 5rem;
       padding-bottom: 0rem !important; } }
   .featured__nav {
     display: flex;
@@ -31,7 +31,8 @@ body {
     @media only screen and (max-width: 50em) {
       .featured__nav {
         flex-direction: column;
-        height: 23vh; } }
+        align-items: center;
+        padding-right: 0rem; } }
   .featured__h1 {
     font-family: 'Lexend';
     font-style: normal;
@@ -40,6 +41,10 @@ body {
     line-height: 4rem;
     text-transform: capitalize;
     color: #1B1C57; }
+    @media only screen and (max-width: 37.5em) {
+      .featured__h1 {
+        margin-bottom: 2rem;
+        margin-top: 2rem; } }
 
 .recomend {
   font-family: 'Lexend';
@@ -57,6 +62,10 @@ body {
 
 .house {
   display: flex; }
+  @media only screen and (max-width: 37.5em) {
+    .house {
+      flex-direction: column;
+      align-items: center; } }
   .house__home {
     margin-right: 2rem;
     display: flex;
@@ -68,6 +77,10 @@ body {
       .house__home {
         padding: 1rem 2rem;
         margin-right: 1rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .house__home {
+        padding: 1rem 2rem;
+        margin-bottom: 2rem; } }
   .house__green-home {
     margin-right: 1rem; }
   .house__green-text {
@@ -88,6 +101,10 @@ body {
       .house__villa {
         padding: 0 2rem;
         margin-right: 1rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .house__villa {
+        padding: 1rem 2rem;
+        margin-bottom: 2rem; } }
   .house__villa-logo {
     height: 1.8rem;
     width: 1.8rem;
@@ -110,6 +127,10 @@ body {
       .house__appart {
         padding: 0 2rem;
         margin-right: 1rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .house__appart {
+        padding: 1rem 2rem;
+        margin-bottom: 2rem; } }
   .house__icon1 {
     background: #E0E3EB;
     border-radius: 3.2rem;
@@ -154,6 +175,9 @@ body {
   @media only screen and (max-width: 37.5em) {
     .houses__card3 {
       margin-bottom: 4rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .houses__card4 {
+      display: none; } }
   .houses__card1-details {
     display: flex;
     margin-top: 2rem; }
@@ -194,6 +218,9 @@ body {
     @media only screen and (max-width: 50em) {
       .footer__main {
         flex-direction: column; } }
+    @media only screen and (max-width: 37.5em) {
+      .footer__main {
+        padding: 4rem 4rem; } }
   .footer__first {
     flex: 0 0 50%; }
   .footer__first-text-div {
@@ -202,6 +229,9 @@ body {
     @media only screen and (max-width: 50em) {
       .footer__first-text-div {
         width: 70%; } }
+    @media only screen and (max-width: 50em) {
+      .footer__first-text-div {
+        width: 100%; } }
   .footer__first-text {
     font-family: 'Lexend';
     font-style: normal;
@@ -213,7 +243,7 @@ body {
     @media only screen and (max-width: 50em) {
       .footer__first-text {
         font-weight: 400;
-        font-size: 2.4rem;
+        font-size: 2rem;
         line-height: 3.4rem;
         margin-top: 5rem; } }
   .footer__icons-div {
@@ -261,7 +291,7 @@ body {
   width: 100%;
   height: 100%;
   display: flex; }
-  @media only screen and (max-width: 50em) {
+  @media only screen and (max-width: 62.5em) {
     .header {
       display: flex;
       flex-direction: column;
@@ -271,15 +301,16 @@ body {
     flex: 0 0 50%; }
   .header__second {
     flex: 0 0 50%;
-    width: 100%;
-    background-image: url(../img/dashboard.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top; }
+    width: 100%; }
     @media only screen and (max-width: 37.5em) {
       .header__second {
         height: 100;
         background-size: auto; } }
+  .header__main-image-div {
+    width: 100%;
+    position: relative; }
+  .header__main-image {
+    width: 100%; }
   .header__first-haf {
     padding: 4rem 10.4rem 0rem 12rem;
     display: flex;
@@ -288,9 +319,12 @@ body {
     background-image: url(../img/blur.png);
     background-repeat: no-repeat;
     background-position: left; }
-    @media only screen and (max-width: 50em) {
+    @media only screen and (max-width: 62.5em) {
       .header__first-haf {
         background-image: none; } }
+    @media only screen and (max-width: 37.5em) {
+      .header__first-haf {
+        padding: 2rem 0rem 0rem 0rem; } }
   .header__second-haf {
     padding-left: 12rem;
     padding-right: 10.4rem;
@@ -300,6 +334,10 @@ body {
     @media only screen and (max-width: 62.5em) {
       .header__second-haf {
         margin-bottom: 2rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .header__second-haf {
+        padding-left: 0rem;
+        padding-right: 0rem; } }
   .header__heading {
     font-family: 'Lexend';
     font-style: normal;
@@ -346,23 +384,23 @@ body {
   align-items: center;
   position: relative;
   margin-bottom: 10rem; }
-  @media only screen and (max-width: 37.5em) {
-    .hunter {
-      margin-bottom: 4rem;
-      margin-top: 3rem; } }
-  @media only screen and (max-width: 50em) {
+  @media only screen and (max-width: 62.5em) {
     .hunter {
       margin-bottom: -2rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .hunter {
+      margin-bottom: 2rem;
+      margin-top: 3rem; } }
   .hunter__nav-row {
-    display: flex;
-    justify-content: space-between; }
+    display: flex; }
     @media only screen and (max-width: 50em) {
       .hunter__nav-row {
         margin-bottom: 8rem; } }
     @media only screen and (max-width: 37.5em) {
       .hunter__nav-row {
         flex-direction: column;
-        flex-wrap: wrap; } }
+        flex-wrap: wrap;
+        margin-bottom: 5rem; } }
   .hunter__icons1 {
     width: 3.2rem;
     height: 3.2rem; }
@@ -428,7 +466,10 @@ body {
     margin-right: 1.3rem; }
 
 .navbar {
-  padding-top: 1.2rem; }
+  position: absolute;
+  top: 16px;
+  left: 10px;
+  width: 90%; }
 
 .nav {
   list-style-type: none;
@@ -441,7 +482,7 @@ body {
     .nav {
       width: 84%;
       margin-left: 3rem; } }
-  @media only screen and (max-width: 50em) {
+  @media only screen and (max-width: 62.5em) {
     .nav {
       display: none;
       visibility: hidden; } }
@@ -483,7 +524,7 @@ body {
 .navbar1 {
   visibility: hidden; }
 
-@media only screen and (max-width: 50em) {
+@media only screen and (max-width: 62.5em) {
   .navbar1 {
     visibility: visible; }
   .nav1 {
@@ -493,18 +534,18 @@ body {
     align-items: center;
     flex-wrap: wrap;
     margin-top: 3rem; } }
-  @media only screen and (max-width: 50em) and (max-width: 37.5em) {
+  @media only screen and (max-width: 62.5em) and (max-width: 37.5em) {
     .nav1__item1 {
       margin-bottom: .2rem; } }
 
-@media only screen and (max-width: 50em) {
+@media only screen and (max-width: 62.5em) {
     .nav1__link1 {
       text-align: center;
       text-decoration: none;
       font-family: 'Lexend';
       font-style: normal;
       font-weight: 600;
-      font-size: 1.4rem;
+      font-size: 1.6rem;
       line-height: 1.8rem;
       text-transform: capitalize;
       background-color: #D1FAE5;
@@ -513,13 +554,13 @@ body {
       border-radius: 3.2rem;
       padding: .8rem 1.6rem;
       margin-right: 2rem; } }
-    @media only screen and (max-width: 50em) and (max-width: 37.5em) {
+    @media only screen and (max-width: 62.5em) and (max-width: 37.5em) {
       .nav1__link1 {
         margin-right: 0rem;
-        padding: .4rem 1rem;
+        padding: 1.4rem 1rem;
         margin-bottom: 2rem; } }
 
-@media only screen and (max-width: 50em) {
+@media only screen and (max-width: 62.5em) {
     .nav1__last1 {
       width: 10.7rem;
       text-decoration: none;
@@ -533,39 +574,40 @@ body {
       line-height: 2.2rem;
       color: #047857;
       padding: 1.2rem 1.6rem; } }
-    @media only screen and (max-width: 50em) and (max-width: 37.5em) {
+    @media only screen and (max-width: 62.5em) and (max-width: 37.5em) {
       .nav1__last1 {
-        padding: 1rem 1rem;
+        padding: 1.8rem 1rem;
         line-height: 2rem; } }
-
-.navbar-row {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; }
-  @media only screen and (max-width: 50em) {
-    .navbar-row {
-      height: 208px; } }
 
 .info {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  padding-bottom: 2rem; }
+  position: absolute;
+  top: 82%;
+  left: 4%;
+  width: 90%; }
+  @media only screen and (max-width: 37.5em) {
+    .info {
+      top: 60%;
+      left: 4%; } }
   .info__div1 {
     display: flex;
     align-items: center;
-    padding: 0.8rem;
+    padding: 2.4rem;
     height: 6rem;
     background: #FFFFFF;
     box-shadow: 0px 11px 48px rgba(51, 51, 51, 0.06);
     border-radius: 22px; }
+    @media only screen and (max-width: 37.5em) {
+      .info__div1 {
+        margin-bottom: 2rem; } }
   .info__div2 {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 0.8rem;
+    padding: 2.4rem;
     height: 6rem;
     background: #FFFFFF;
     box-shadow: 0px 11px 48px rgba(51, 51, 51, 0.06);
@@ -574,7 +616,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 0.8rem;
+    padding: 2.4rem;
     height: 6rem;
     background: #FFFFFF;
     box-shadow: 0px 11px 48px rgba(51, 51, 51, 0.06);
@@ -648,6 +690,10 @@ body {
 .news {
   padding: 6rem 12rem;
   width: 100%; }
+  @media only screen and (max-width: 37.5em) {
+    .news {
+      padding: 4rem 4rem;
+      width: 100%; } }
   .news__main-div {
     width: 100%;
     display: flex;
@@ -800,7 +846,8 @@ body {
   width: 100%; }
   @media only screen and (max-width: 37.5em) {
     .testimonials {
-      padding-bottom: 0rem; } }
+      padding-bottom: 0rem;
+      padding-top: 4rem; } }
   .testimonials__text-div {
     display: flex;
     flex-direction: column;
@@ -846,13 +893,12 @@ body {
         align-items: center; } }
   .testimonials__pic1-div {
     position: relative; }
-    @media only screen and (max-width: 50em) {
-      .testimonials__pic1-div {
-        margin-bottom: 15rem;
-        margin-left: -5rem; } }
     @media only screen and (max-width: 62.5em) {
       .testimonials__pic1-div {
-        margin-bottom: 15rem; } }
+        margin-bottom: 9rem; } }
+    @media only screen and (max-width: 50em) {
+      .testimonials__pic1-div {
+        margin-bottom: 9rem; } }
   .testimonials__img1 {
     align-items: center; }
   .testimonials__pic2-div {
@@ -870,6 +916,9 @@ body {
         visibility: hidden; } }
   .testimonials__pic3-div {
     position: relative; }
+    @media only screen and (max-width: 37.5em) {
+      .testimonials__pic3-div {
+        display: none; } }
   .testimonials__text1-div {
     position: absolute;
     top: 66%;
@@ -881,7 +930,7 @@ body {
     @media only screen and (max-width: 37.5em) {
       .testimonials__text1-div {
         top: 83%;
-        left: 20%; } }
+        left: 9%; } }
   .testimonials__text2-div {
     position: absolute;
     top: 66%;
@@ -1000,6 +1049,10 @@ body {
   background-repeat: no-repeat;
   background-position: left;
   padding: 6rem 12rem; }
+  @media only screen and (max-width: 37.5em) {
+    .tips {
+      padding: 4rem 6rem;
+      background-image: none; } }
   .tips__heading1 {
     font-family: 'Lexend';
     font-style: normal;
@@ -1155,7 +1208,7 @@ body {
   background-position: right; }
   @media only screen and (max-width: 37.5em) {
     .tours {
-      padding: 0rem 3rem 6rem 6rem;
+      padding: 0rem 3rem 6rem 3rem;
       background-image: none; } }
   .tours__row {
     display: flex; }
@@ -1164,6 +1217,11 @@ body {
         display: flex;
         flex-direction: column;
         padding: 0 5rem; } }
+    @media only screen and (max-width: 50em) {
+      .tours__row {
+        display: flex;
+        flex-direction: column;
+        padding: 0rem 0rem; } }
   .tours__first {
     flex: 0 0 50%;
     margin-top: 4rem;
@@ -1178,13 +1236,13 @@ body {
     @media only screen and (max-width: 37.5em) {
       .tours__pics {
         width: 40rem;
-        margin-left: -3.4rem; } }
+        margin-left: 0rem; } }
   .tours__main-pic {
     margin-left: 10rem; }
     @media only screen and (max-width: 37.5em) {
       .tours__main-pic {
         width: 100%;
-        margin-left: -8px; } }
+        margin-left: 10px; } }
   .tours__pic1 {
     position: absolute;
     top: 70%;
@@ -1261,7 +1319,7 @@ body {
     @media only screen and (max-width: 37.5em) {
       .tours__text {
         width: 100%;
-        line-height: 1.8rem; } }
+        line-height: 2.5rem; } }
   .tours__house-detail {
     margin-bottom: 2.4rem;
     font-weight: 600;
@@ -1337,19 +1395,18 @@ body {
     background: #10B981;
     border-radius: 32px;
     margin-left: 7rem; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 75em) {
       .tour-last-row__button {
-        padding: 6px 7px;
-        margin-left: -6px;
-        margin-top: 1rem;
-        margin-bottom: 4rem; } }
+        margin-left: 2rem; } }
     @media only screen and (max-width: 62.5em) {
       .tour-last-row__button {
         padding: 7px 8px;
         margin-left: 1rem; } }
-    @media only screen and (max-width: 75em) {
+    @media only screen and (max-width: 37.5em) {
       .tour-last-row__button {
-        margin-left: 2rem; } }
+        padding: 6px 7px;
+        margin-top: 1rem;
+        margin-bottom: 4rem; } }
   .tour-last-row__text {
     font-family: 'Lexend';
     font-style: normal;

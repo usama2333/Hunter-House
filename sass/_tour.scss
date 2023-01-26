@@ -6,7 +6,7 @@
     // margin-right: auto;
     
     @media only screen and (max-width : $bp-small)  {
-        padding: 0rem 3rem 6rem 6rem;
+        padding: 0rem 3rem 6rem 3rem;
         background-image: none;
         
     }
@@ -19,6 +19,13 @@
             display: flex;
             flex-direction: column; 
             padding: 0 5rem;
+            
+        }
+
+        @media only screen and (max-width : $bp-medium)  {
+            display: flex;
+            flex-direction: column; 
+            padding: 0rem 0rem;
             
         }
 
@@ -48,7 +55,7 @@
         }
         @media only screen and (max-width : $bp-small)  {
             width: 40rem;
-            margin-left: -3.4rem;
+            margin-left: 0rem;
             // display: none;
             // visibility: hidden;
              
@@ -67,7 +74,7 @@
         
         @media only screen and (max-width : $bp-small)  {
             width: 100%;
-            margin-left: -8px;
+            margin-left: 10px;
 
              
          }
@@ -182,13 +189,14 @@
         font-style: normal;
         font-weight: 400;
         font-size: 1.6rem;
-        line-height: 2.8rem;        
+        // line-height: 2.8rem; 
+        line-height: 2.8rem;       
         color: #626687;
         opacity: 0.75;
 
         @media only screen and (max-width : $bp-small)  {
             width: 100%;
-            line-height: 1.8rem;  
+            line-height: 2.5rem;  
 
         }
     }
@@ -310,9 +318,21 @@
         border-radius: 32px;
         margin-left: 7rem;
 
+        @media only screen and (max-width : $bp-largest)  {
+           
+            margin-left: 2rem;
+            
+        }
+
+        @media only screen and (max-width : $bp-large)  {
+            padding: 7px 8px;
+            margin-left: 1rem;
+            
+        }
+
         @media only screen and (max-width : $bp-small)  {
             padding: 6px 7px;
-            margin-left: -6px;
+            // margin-left: -6px;
             margin-top: 1rem;
             margin-bottom: 4rem;
             
@@ -323,17 +343,9 @@
             
         // }
 
-        @media only screen and (max-width : $bp-large)  {
-            padding: 7px 8px;
-            margin-left: 1rem;
-            
-        }
+       
 
-        @media only screen and (max-width : $bp-largest)  {
-           
-            margin-left: 2rem;
-            
-        }
+        
     }
     &__text {
         font-family: 'Lexend';

@@ -6,7 +6,7 @@
 
     display: flex;
     // padding: 4rem 6rem;
-    @media only screen and (max-width : $bp-medium)  {
+    @media only screen and (max-width : $bp-large)  {
         display: flex;
         flex-direction: column; 
         padding: 0 5rem;
@@ -23,15 +23,16 @@
   
 
     &__second {
+        // position: relative;
         // height: 97vh;
         flex: 0 0 50%;
         // position: relative;
         // padding: 1rem;
         width: 100%;
-        background-image: url(../img/dashboard.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position:top;
+        // background-image: url(../img/dashboard.png);
+        // background-repeat: no-repeat;
+        // background-size: cover;
+        // background-position:top;
         // width: 100%;
 
             
@@ -41,6 +42,20 @@
            background-size: auto;
            
         }
+    }
+
+    &__main-image-div {
+        width: 100%;
+        position: relative;
+       
+
+    }
+
+    &__main-image {
+        width: 100%;
+        
+        // background-size: cover;
+        // background-attachment: fixed;
     }
 
     &__first-haf {
@@ -53,10 +68,16 @@
         background-repeat: no-repeat;
         background-position: left;
 
-        @media only screen and (max-width : $bp-medium)  {
+        @media only screen and (max-width : $bp-large)  {
            
             background-image: none;
                 
+       }
+
+       @media only screen and (max-width : $bp-small)  {
+           
+        padding : 2rem 0rem 0rem 0rem;
+            
        }
 
 
@@ -79,6 +100,14 @@
                 margin-bottom: 2rem;
                     
            }
+
+           @media only screen and (max-width : $bp-small)  {
+            padding-left: 0rem;
+            padding-right: 0rem;
+
+            
+                
+       }
     
     }
 
@@ -156,33 +185,38 @@
     position: relative;
     margin-bottom: 10rem;
 
+    @media only screen and (max-width : $bp-large)  {
+        margin-bottom: -2rem;
+                
+    }
+
     @media only screen and (max-width : $bp-small)  {
-        margin-bottom: 4rem;
+        margin-bottom: 2rem;
         margin-top: 3rem;
                 
     }
 
-    @media only screen and (max-width : $bp-medium)  {
-        margin-bottom: -2rem;
-                
-    }
+    
 
 
     
     &__nav-row  {
         display: flex;
-        justify-content: space-between;
+        // justify-content: space-between;
 
+        
+        
         @media only screen and (max-width : $bp-medium)  {
             margin-bottom: 8rem;
-                    
+            
         }
-
         @media only screen and (max-width : $bp-small)  {
             flex-direction: column;
             flex-wrap: wrap;
-                    
+            margin-bottom: 5rem;  
         }
+
+       
         // margin-bottom: 8rem;
         // flex-direction: column-reverse;
         
@@ -298,7 +332,11 @@
 }
 
 .navbar {
-    padding-top: 1.2rem;
+    // padding-top: 1.2rem;
+    position: absolute;
+    top: 16px;
+    left: 10px;
+    width: 90%;
 }
 
 .nav {
@@ -316,7 +354,7 @@
             margin-left: 3rem;
         }
 
-        @media only screen and (max-width : $bp-medium)  {
+        @media only screen and (max-width : $bp-large)  {
             display: none;
             visibility: hidden;
         }
@@ -375,7 +413,7 @@
 }
 
 // Second Navbar
-@media only screen and (max-width : $bp-medium)  {
+@media only screen and (max-width : $bp-large)  {
     .navbar1 {
         visibility: visible;
     }
@@ -405,7 +443,7 @@
         font-family: 'Lexend';
         font-style: normal;
         font-weight: 600;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         line-height: 1.8rem;
         text-transform: capitalize;
         background-color:#D1FAE5;
@@ -418,7 +456,7 @@
 
          @media only screen and (max-width : $bp-small)  {
             margin-right: 0rem;
-            padding: .4rem 1rem;
+            padding: 1.4rem 1rem;
             margin-bottom: 2rem;
 
          }
@@ -439,7 +477,7 @@
         padding: 1.2rem 1.6rem;
 
         @media only screen and (max-width : $bp-small)  {
-            padding: 1rem 1rem;
+            padding: 1.8rem 1rem;
             line-height: 2rem;
         //    display: none;
 
@@ -451,49 +489,61 @@
 }
 ///////
 
-.navbar-row {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+// .navbar-row {
+//     height: 100%;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+//     // position: absolute;
+//     //     top: 0%;
+//     //     left: 0%;
 
-    @media only screen and (max-width : $bp-medium)  {
-        height: 208px;
-    }
-}
+//     @media only screen and (max-width : $bp-medium)  {
+//         height: 208px;
+//     }
+// }
 .info {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
+
+    position: absolute;
+    top: 82%;
+    left: 4%;
+    width: 90%;
     
-    padding-bottom: 2rem;
+    // padding-bottom: 2rem;
     // margin-left: 2.8rem;
 
         
-    // @media only screen and (max-width : $bp-small)  {
-    //        align-items: flex-end;
-        
-    // }
+    @media only screen and (max-width : $bp-small)  {
+        top: 60%;
+        left: 4%;
+     
+ }
 
     &__div1 {
         display: flex;
         align-items: center;
-        padding: 0.8rem;
+        padding: 2.4rem;
         // width: 24rem;
         height: 6rem;
         background: #FFFFFF;
         box-shadow: 0px 11px 48px rgba(51, 51, 51, 0.06);
         border-radius: 22px;
         
-
+        @media only screen and (max-width : $bp-small)  {
+            margin-bottom: 2rem
+         
+     }
 
     }
     &__div2 {
         display: flex;
         align-items: center;
         justify-content: space-around;
-        padding: 0.8rem;
+        padding: 2.4rem;
         // width: 15rem;
         height: 6rem;
         background: #FFFFFF;
@@ -505,7 +555,7 @@
         display: flex;
         align-items: center;
         justify-content: space-around;
-        padding: 0.8rem;
+        padding: 2.4rem;
         // width: 16rem;
         height: 6rem;
         background: #FFFFFF;

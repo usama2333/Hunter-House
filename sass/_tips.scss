@@ -6,6 +6,12 @@
     padding: 6rem 12rem;
     // margin-right: auto;
 
+    @media only screen and (max-width : $bp-small)  {
+        padding: 4rem 6rem;
+        background-image: none;
+        
+    }
+
     &__heading1 {
 
         font-family: 'Lexend';

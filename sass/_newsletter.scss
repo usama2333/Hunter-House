@@ -3,6 +3,11 @@
     padding: 6rem 12rem;
     // margin: auto;
     width: 100%;
+
+    @media only screen and (max-width : $bp-small)  {
+        padding: 4rem 4rem;
+        width: 100%;
+    }
     
 
     
