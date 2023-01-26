@@ -5,6 +5,12 @@
     padding-bottom: 6rem;
     width: 100%;
 
+    @media only screen and (max-width : $bp-medium)  {
+        padding-left: 3rem;
+        padding-right: 3rem;
+       
+    }
+
     @media only screen and (max-width : $bp-small)  {
         
         padding-bottom: 0rem;
@@ -74,6 +80,10 @@
         justify-content: space-between;
         
         flex-wrap: wrap;
+        @media only screen and (max-width : $bp-largestxx)  {
+            justify-content: space-around;
+           
+        }
 
         @media only screen and (max-width : $bp-large)  {
             flex-direction: column;
@@ -88,6 +98,11 @@
         position: relative;
         // height: 40rem;
         // width: 35rem;
+
+        @media only screen and (max-width : $bp-largestx)  {
+            margin-bottom: 10rem;
+           
+        }
 
         @media only screen and (max-width : $bp-large)  {
             // display: none;
@@ -115,12 +130,12 @@
         position: relative;
         // background-color: brown;
 
-        @media only screen and (max-width : $bp-small)  {
+        // @media only screen and (max-width : $bp-small)  {
            
-                height: 0rem;
-                display: none;
-                visibility: hidden;
-        }
+        //         height: 0rem;
+        //         display: none;
+        //         visibility: hidden;
+        // }
 
         
     }
@@ -133,8 +148,8 @@
             // height: 80%;
             // margin-left: 7rem;
             // margin-top: 17rem;
-            display: none;
-            visibility: hidden;
+            // display: none;
+            // visibility: hidden;
         }
 
     }
@@ -145,12 +160,17 @@
         position:relative;
 
         // display: none;
+
+        @media only screen and (max-width : $bp-largestxx)  {
+            display: none;
+           
+        }
         @media only screen and (max-width : $bp-small)  {
             display: none;
            
         }
         @media only screen and (max-width : $bp-medium)  {
-            // display: none;
+            display: none;
            
         }
      

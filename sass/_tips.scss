@@ -6,8 +6,12 @@
     padding: 6rem 12rem;
     // margin-right: auto;
 
-    @media only screen and (max-width : $bp-small)  {
+    @media only screen and (max-width : $bp-largest)  {
         padding: 4rem 6rem;
+    }
+
+    @media only screen and (max-width : $bp-small)  {
+        padding: 4rem 4rem;
         background-image: none;
         
     }

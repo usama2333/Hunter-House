@@ -4,6 +4,11 @@
     background-repeat: no-repeat;
     background-position: right;
     // margin-right: auto;
+
+    @media only screen and (max-width : $bp-largest)  {
+           
+        padding: 6rem 4rem;
+      }
     
     @media only screen and (max-width : $bp-small)  {
         padding: 0rem 3rem 6rem 3rem;
@@ -15,7 +20,7 @@
 
         display: flex;
 
-        @media only screen and (max-width : $bp-medium)  {
+        @media only screen and (max-width : $bp-large)  {
             display: flex;
             flex-direction: column; 
             padding: 0 5rem;
@@ -50,12 +55,13 @@
 
 
         @media only screen and (max-width : $bp-medium)  {
-           width: 45rem;
+           width: 70%;
             
         }
         @media only screen and (max-width : $bp-small)  {
-            width: 40rem;
-            margin-left: 0rem;
+            // width: 40rem;
+            margin-left: 4rem;
+            width: 70%;
             // display: none;
             // visibility: hidden;
              
@@ -63,18 +69,44 @@
         
     }
 
+    &__main-pic-div{
+        
+    }
+
     &__main-pic {
-        // width: 100%;
-        // height: 100%;
+        width: 100%;
+        height: 100%;
         // width: 48.8rem;
         // height: 41.6rem;
         // background-position: right;
 
         margin-left: 10rem;
+
+        @media only screen and (max-width : $bp-large)  {
+           width: 70%;
+           height : 70%;
+            margin-top: 3rem;
+
+             
+         }
+
+         @media only screen and (max-width : $bp-medium)  {
+            width: 100%;
+            height : 100%;
+             margin-top: 3rem;
+ 
+              
+          }
         
         @media only screen and (max-width : $bp-small)  {
             width: 100%;
             margin-left: 10px;
+
+             
+         }
+
+         @media only screen and (max-width : $bp-largest)  {
+            margin-left: 2rem;
 
              
          }
@@ -86,10 +118,12 @@
         top: 70%;
         left: 8%;
 
-        @media only screen and (max-width : $bp-small)  {
+
+       
+
+        @media only screen and (max-width : $bp-large)  {
             display: none;
             visibility: hidden;
-
              
          }
     }
@@ -99,7 +133,7 @@
         top: 91%;
         left: 62%;
 
-        @media only screen and (max-width : $bp-small)  {
+        @media only screen and (max-width : $bp-large)  {
             display: none;
             visibility: hidden;
 
@@ -113,7 +147,7 @@
         top: 91%;
         left: 82%;
 
-        @media only screen and (max-width : $bp-small)  {
+        @media only screen and (max-width : $bp-large)  {
             display: none;
             visibility: hidden;
 
@@ -128,6 +162,14 @@
         top: 45%;
         left: 54%;
 
+        @media only screen and (max-width : $bp-large)  {
+           
+            top: 50%;
+            left: 27%;
+            display: none;
+ 
+         }
+
         @media only screen and (max-width : $bp-small)  {
            
             top: 50%;
@@ -141,6 +183,11 @@
     &__recomend2-row {
         display: flex;
         align-items: center;
+
+        @media only screen and (max-width : $bp-medium)  {
+           
+           justify-content: center;
+          }
     }
 
     &__recomend2 {
@@ -219,6 +266,13 @@
 
 .icon {
     width: 55%;
+
+    @media only screen and (max-width : $bp-large)  {
+        width: 73%; 
+
+    }
+
+    
 
     &__row1 {
         display: flex;

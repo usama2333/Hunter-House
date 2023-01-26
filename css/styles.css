@@ -17,6 +17,9 @@ body {
 
 .featured {
   padding: 12rem 0rem 6rem 16rem; }
+  @media only screen and (max-width: 75em) {
+    .featured {
+      padding: 12rem 0rem 6rem 6rem; } }
   @media only screen and (max-width: 37.5em) {
     .featured {
       padding: 6rem 5rem;
@@ -28,6 +31,9 @@ body {
     flex-wrap: wrap;
     margin-bottom: 4rem;
     padding-right: 12rem; }
+    @media only screen and (max-width: 68.75em) {
+      .featured__nav {
+        padding-right: 4rem; } }
     @media only screen and (max-width: 50em) {
       .featured__nav {
         flex-direction: column;
@@ -42,6 +48,10 @@ body {
     text-transform: capitalize;
     color: #1B1C57; }
     @media only screen and (max-width: 37.5em) {
+      .featured__h1 {
+        margin-bottom: 2rem;
+        margin-top: 2rem; } }
+    @media only screen and (max-width: 50em) {
       .featured__h1 {
         margin-bottom: 2rem;
         margin-top: 2rem; } }
@@ -62,6 +72,9 @@ body {
 
 .house {
   display: flex; }
+  @media only screen and (max-width: 50em) {
+    .house {
+      margin-bottom: 2rem; } }
   @media only screen and (max-width: 37.5em) {
     .house {
       flex-direction: column;
@@ -145,6 +158,9 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap; }
+  @media only screen and (max-width: 68.75em) {
+    .houses {
+      justify-content: space-evenly; } }
   .houses__p1 {
     margin-top: 2rem;
     font-family: 'Lexend';
@@ -166,15 +182,27 @@ body {
     @media only screen and (max-width: 37.5em) {
       .houses__price1 {
         text-align: center; } }
+  @media only screen and (max-width: 50em) {
+    .houses__card1 {
+      margin-bottom: 6rem; } }
   @media only screen and (max-width: 37.5em) {
     .houses__card1 {
+      margin-bottom: 6rem; } }
+  @media only screen and (max-width: 50em) {
+    .houses__card2 {
       margin-bottom: 6rem; } }
   @media only screen and (max-width: 37.5em) {
     .houses__card2 {
       margin-bottom: 8rem; } }
+  @media only screen and (max-width: 68.75em) {
+    .houses__card3 {
+      margin-top: 4rem; } }
   @media only screen and (max-width: 37.5em) {
     .houses__card3 {
       margin-bottom: 4rem; } }
+  @media only screen and (max-width: 87.5em) {
+    .houses__card4 {
+      display: none; } }
   @media only screen and (max-width: 37.5em) {
     .houses__card4 {
       display: none; } }
@@ -215,12 +243,15 @@ body {
   .footer__main {
     display: flex;
     padding: 6rem 12rem; }
+    @media only screen and (max-width: 75em) {
+      .footer__main {
+        padding: 4rem 6rem; } }
     @media only screen and (max-width: 50em) {
       .footer__main {
         flex-direction: column; } }
     @media only screen and (max-width: 37.5em) {
       .footer__main {
-        padding: 4rem 4rem; } }
+        padding: 4rem 6rem; } }
   .footer__first {
     flex: 0 0 50%; }
   .footer__first-text-div {
@@ -291,12 +322,11 @@ body {
   width: 100%;
   height: 100%;
   display: flex; }
-  @media only screen and (max-width: 62.5em) {
+  @media only screen and (max-width: 56.25em) {
     .header {
       display: flex;
       flex-direction: column;
-      padding: 0 5rem;
-      height: 100%; } }
+      padding: 0 5rem; } }
   .header__first {
     flex: 0 0 50%; }
   .header__second {
@@ -319,9 +349,12 @@ body {
     background-image: url(../img/blur.png);
     background-repeat: no-repeat;
     background-position: left; }
+    @media only screen and (max-width: 75em) {
+      .header__first-haf {
+        padding: 4rem 6rem 0rem 6rem; } }
     @media only screen and (max-width: 62.5em) {
       .header__first-haf {
-        background-image: none; } }
+        padding: 4rem 1rem 0rem 6rem; } }
     @media only screen and (max-width: 37.5em) {
       .header__first-haf {
         padding: 2rem 0rem 0rem 0rem; } }
@@ -331,6 +364,10 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between; }
+    @media only screen and (max-width: 75em) {
+      .header__second-haf {
+        padding-left: 6rem;
+        padding-right: 6rem; } }
     @media only screen and (max-width: 62.5em) {
       .header__second-haf {
         margin-bottom: 2rem; } }
@@ -384,6 +421,9 @@ body {
   align-items: center;
   position: relative;
   margin-bottom: 10rem; }
+  @media only screen and (max-width: 75em) {
+    .hunter {
+      margin-bottom: 5rem; } }
   @media only screen and (max-width: 62.5em) {
     .hunter {
       margin-bottom: -2rem; } }
@@ -396,7 +436,7 @@ body {
     @media only screen and (max-width: 50em) {
       .hunter__nav-row {
         margin-bottom: 8rem; } }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 62.5em) {
       .hunter__nav-row {
         flex-direction: column;
         flex-wrap: wrap;
@@ -530,10 +570,10 @@ body {
   .nav1 {
     list-style-type: none;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 3rem; } }
+    margin-top: 7rem; } }
   @media only screen and (max-width: 62.5em) and (max-width: 37.5em) {
     .nav1__item1 {
       margin-bottom: .2rem; } }
@@ -588,9 +628,17 @@ body {
   top: 82%;
   left: 4%;
   width: 90%; }
+  @media only screen and (max-width: 81.25em) {
+    .info {
+      top: 71%;
+      left: 4%; } }
+  @media only screen and (max-width: 56.25em) {
+    .info {
+      flex-direction: column;
+      top: 61%; } }
   @media only screen and (max-width: 37.5em) {
     .info {
-      top: 60%;
+      top: 28%;
       left: 4%; } }
   .info__div1 {
     display: flex;
@@ -601,6 +649,9 @@ body {
     box-shadow: 0px 11px 48px rgba(51, 51, 51, 0.06);
     border-radius: 22px; }
     @media only screen and (max-width: 37.5em) {
+      .info__div1 {
+        margin-bottom: 2rem; } }
+    @media only screen and (max-width: 56.25em) {
       .info__div1 {
         margin-bottom: 2rem; } }
   .info__div2 {
@@ -621,10 +672,12 @@ body {
     background: #FFFFFF;
     box-shadow: 0px 11px 48px rgba(51, 51, 51, 0.06);
     border-radius: 22px; }
+    @media only screen and (max-width: 81.25em) {
+      .info__div3 {
+        margin-top: 2rem; } }
     @media only screen and (max-width: 37.5em) {
       .info__div3 {
-        margin-top: 2rem;
-        display: none; } }
+        margin-top: 2rem; } }
   .info__img1 {
     width: 7rem;
     height: 7rem;
@@ -652,6 +705,9 @@ body {
     font-size: 1.2rem;
     line-height: 1.8rem;
     color: #1B1C57; }
+    @media only screen and (max-width: 56.25em) {
+      .info__text1 {
+        font-size: 1.5rem; } }
   .info__text2 {
     font-family: 'Lexend';
     font-style: normal;
@@ -659,6 +715,9 @@ body {
     font-size: 1rem;
     line-height: 1.8rem;
     color: #68799F; }
+    @media only screen and (max-width: 56.25em) {
+      .info__text2 {
+        font-size: 1.5rem; } }
 
 .testing {
   position: relative; }
@@ -690,9 +749,12 @@ body {
 .news {
   padding: 6rem 12rem;
   width: 100%; }
+  @media only screen and (max-width: 75em) {
+    .news {
+      padding: 4rem 6rem; } }
   @media only screen and (max-width: 37.5em) {
     .news {
-      padding: 4rem 4rem;
+      padding: 4rem 6rem;
       width: 100%; } }
   .news__main-div {
     width: 100%;
@@ -844,6 +906,10 @@ body {
   padding-top: 6rem;
   padding-bottom: 6rem;
   width: 100%; }
+  @media only screen and (max-width: 50em) {
+    .testimonials {
+      padding-left: 3rem;
+      padding-right: 3rem; } }
   @media only screen and (max-width: 37.5em) {
     .testimonials {
       padding-bottom: 0rem;
@@ -886,6 +952,9 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap; }
+    @media only screen and (max-width: 87.5em) {
+      .testimonials__row {
+        justify-content: space-around; } }
     @media only screen and (max-width: 62.5em) {
       .testimonials__row {
         flex-direction: column;
@@ -893,6 +962,9 @@ body {
         align-items: center; } }
   .testimonials__pic1-div {
     position: relative; }
+    @media only screen and (max-width: 81.25em) {
+      .testimonials__pic1-div {
+        margin-bottom: 10rem; } }
     @media only screen and (max-width: 62.5em) {
       .testimonials__pic1-div {
         margin-bottom: 9rem; } }
@@ -903,20 +975,17 @@ body {
     align-items: center; }
   .testimonials__pic2-div {
     position: relative; }
-    @media only screen and (max-width: 37.5em) {
-      .testimonials__pic2-div {
-        height: 0rem;
-        display: none;
-        visibility: hidden; } }
   .testimonials__img2 {
     width: 100%; }
-    @media only screen and (max-width: 37.5em) {
-      .testimonials__img2 {
-        display: none;
-        visibility: hidden; } }
   .testimonials__pic3-div {
     position: relative; }
+    @media only screen and (max-width: 87.5em) {
+      .testimonials__pic3-div {
+        display: none; } }
     @media only screen and (max-width: 37.5em) {
+      .testimonials__pic3-div {
+        display: none; } }
+    @media only screen and (max-width: 50em) {
       .testimonials__pic3-div {
         display: none; } }
   .testimonials__text1-div {
@@ -1049,9 +1118,12 @@ body {
   background-repeat: no-repeat;
   background-position: left;
   padding: 6rem 12rem; }
+  @media only screen and (max-width: 75em) {
+    .tips {
+      padding: 4rem 6rem; } }
   @media only screen and (max-width: 37.5em) {
     .tips {
-      padding: 4rem 6rem;
+      padding: 4rem 4rem;
       background-image: none; } }
   .tips__heading1 {
     font-family: 'Lexend';
@@ -1206,13 +1278,16 @@ body {
   background-image: url(../img/redcolor.png);
   background-repeat: no-repeat;
   background-position: right; }
+  @media only screen and (max-width: 75em) {
+    .tours {
+      padding: 6rem 4rem; } }
   @media only screen and (max-width: 37.5em) {
     .tours {
       padding: 0rem 3rem 6rem 3rem;
       background-image: none; } }
   .tours__row {
     display: flex; }
-    @media only screen and (max-width: 50em) {
+    @media only screen and (max-width: 62.5em) {
       .tours__row {
         display: flex;
         flex-direction: column;
@@ -1232,22 +1307,37 @@ body {
     position: relative; }
     @media only screen and (max-width: 50em) {
       .tours__pics {
-        width: 45rem; } }
+        width: 70%; } }
     @media only screen and (max-width: 37.5em) {
       .tours__pics {
-        width: 40rem;
-        margin-left: 0rem; } }
+        margin-left: 4rem;
+        width: 70%; } }
   .tours__main-pic {
+    width: 100%;
+    height: 100%;
     margin-left: 10rem; }
+    @media only screen and (max-width: 62.5em) {
+      .tours__main-pic {
+        width: 70%;
+        height: 70%;
+        margin-top: 3rem; } }
+    @media only screen and (max-width: 50em) {
+      .tours__main-pic {
+        width: 100%;
+        height: 100%;
+        margin-top: 3rem; } }
     @media only screen and (max-width: 37.5em) {
       .tours__main-pic {
         width: 100%;
         margin-left: 10px; } }
+    @media only screen and (max-width: 75em) {
+      .tours__main-pic {
+        margin-left: 2rem; } }
   .tours__pic1 {
     position: absolute;
     top: 70%;
     left: 8%; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 62.5em) {
       .tours__pic1 {
         display: none;
         visibility: hidden; } }
@@ -1255,7 +1345,7 @@ body {
     position: absolute;
     top: 91%;
     left: 62%; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 62.5em) {
       .tours__pic2 {
         display: none;
         visibility: hidden; } }
@@ -1263,7 +1353,7 @@ body {
     position: absolute;
     top: 91%;
     left: 82%; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 62.5em) {
       .tours__pic3 {
         display: none;
         visibility: hidden; } }
@@ -1271,6 +1361,11 @@ body {
     position: absolute;
     top: 45%;
     left: 54%; }
+    @media only screen and (max-width: 62.5em) {
+      .tours__button {
+        top: 50%;
+        left: 27%;
+        display: none; } }
     @media only screen and (max-width: 37.5em) {
       .tours__button {
         top: 50%;
@@ -1278,6 +1373,9 @@ body {
   .tours__recomend2-row {
     display: flex;
     align-items: center; }
+    @media only screen and (max-width: 50em) {
+      .tours__recomend2-row {
+        justify-content: center; } }
   .tours__recomend2 {
     font-family: 'Lexend';
     font-style: normal;
@@ -1332,6 +1430,9 @@ body {
 
 .icon {
   width: 55%; }
+  @media only screen and (max-width: 62.5em) {
+    .icon {
+      width: 73%; } }
   .icon__row1 {
     display: flex;
     align-items: start;
